@@ -1,0 +1,49 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: lightblue;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px darkslateblue;
+  padding: 10px;
+  border-radius: 5px;
+  width: 460px;
+  position: relative;
+  font-size: 1em;
+}
+
+ul li:hover {
+  left: 5px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+#user, #message{
+  width: 460px;
+  margin-bottom: 5px;
+}
+
+#submit{
+  padding: 0.5rem;
+  background-color: lightblue;
+  color: white;
+  border-radius: 5px;
+  width: 460px;  
+}
+
+#submit:hover {
+  background-color: lightgreen;
+  color: black;
+}

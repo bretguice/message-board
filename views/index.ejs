@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <a href="/new">New message</a>
+    <% if (messages.length > 0){ %>
+      <ul class="message-list">
+        <% for (const message of messages) {%>
+        <li class="message-object">
+          <div><%=message.user %></div>
+          <div><%=message.text %></div>
+          <div><%=message.added %></div>
+        </li>
+        <% } %>
+      </ul>
+      <%} %>
+  </body>
+</html>
